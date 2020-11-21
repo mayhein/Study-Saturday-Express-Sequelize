@@ -19,6 +19,7 @@ const Student = db.define('student', {
   },
 });
 
+// HOOK 
 Student.beforeCreate((student) => {
   const nameFirst = student.firstName;
   const nameLast = student.lastName;
